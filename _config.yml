@@ -1,0 +1,35 @@
+title: Attack & Defense
+
+
+description: A blog from the Firefox Security folks
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://attackanddefense.dev"
+
+
+# Build settings
+theme: minima
+minima:
+  skin: auto
+
+plugins:
+  - jekyll-feed
+#  - jekyll-octicons
+
+header_pages:
+  - blog.markdown # blog posts
+  - about.markdown # a lot of links that are hosted elsewhere
+
+sass:
+  style: compressed
+
+collections:
+  - home
+
+# Make sass/scss deprecation warnings quiet. This should be removed if we start to customize more heavily.
+sass:
+  quiet_deps: true
+
+# Fix blog to not show a name & email address in all page footers
+author:
+  name: " "
+  email: ""
