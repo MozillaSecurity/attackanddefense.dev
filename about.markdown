@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-The Attack & Defense blog is the primary outlet for the Firefox Security team to talk about new developments. We will share recent updates to our defenses, cool new attacks and general tips on how to find bugs and get bug bounties.
+The Attack & Defense blog is the primary outlet from the Firefox Security team to talk about new developments. We will share recent updates to our defenses, cool new attacks and general tips on how to find bugs and get bug bounties.
 
 Here are some useful links:
 - [Mozilla Security Blog](https://blog.mozilla.org/security/)
