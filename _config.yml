@@ -29,8 +29,3 @@ collections:
 sass:
   quiet_deps: true
 
-# Fix blog to not show a name & email address in all page footers
-author:
-  name: "Firefox Application Security Team "
-  email: "@"
-
