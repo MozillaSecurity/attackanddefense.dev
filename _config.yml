@@ -1,7 +1,7 @@
 title: Attack & Defense
 
 
-description: A blog from the Firefox Security folks
+description: A blog from the Firefox Application Security Team
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://attackanddefense.dev"
 
@@ -33,3 +33,4 @@ sass:
 author:
   name: " "
   email: ""
+
