@@ -31,6 +31,6 @@ sass:
 
 # Fix blog to not show a name & email address in all page footers
 author:
-  name: " "
-  email: ""
+  name: "Firefox Application Security Team "
+  email: "@"
 
