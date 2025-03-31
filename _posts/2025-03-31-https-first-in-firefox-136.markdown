@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Evolution of HTTPS Adoption in Firefox"
+title:  "The Evolution of HTTPS Adoption in Firefox"
 date:   2024-03-31 17:37:37 +0100
 ---
 
