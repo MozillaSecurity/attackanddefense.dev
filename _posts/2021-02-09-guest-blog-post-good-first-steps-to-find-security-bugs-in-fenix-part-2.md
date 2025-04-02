@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Guest Blog Post: Good First Steps to Find Security Bugs in Fenix (Part 2)"
 date: 2021-02-09
 categories: 

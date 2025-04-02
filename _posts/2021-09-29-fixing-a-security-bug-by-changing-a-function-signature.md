@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Fixing a Security Bug by Changing a Function Signature"
 date: 2021-09-29
 categories: 

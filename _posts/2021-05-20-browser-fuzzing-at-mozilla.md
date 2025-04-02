@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Browser fuzzing at Mozilla"
 date: 2021-05-20
 tags: 

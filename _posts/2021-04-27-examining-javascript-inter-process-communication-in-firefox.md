@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Examining JavaScript Inter-Process Communication in Firefox"
 date: 2021-04-27
 categories: 

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Guest Blog Post: Firefox for Android LAN-Based Intent Triggering"
 date: 2020-11-10
 categories: 

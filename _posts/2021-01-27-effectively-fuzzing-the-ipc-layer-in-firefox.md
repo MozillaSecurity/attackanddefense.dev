@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Effectively Fuzzing the IPC Layer in Firefox"
 date: 2021-01-27
 categories: 

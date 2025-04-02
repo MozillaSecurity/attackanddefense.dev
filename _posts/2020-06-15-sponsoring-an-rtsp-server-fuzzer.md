@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Sponsoring an RTSP Server Fuzzer"
 date: 2020-06-15
 ---

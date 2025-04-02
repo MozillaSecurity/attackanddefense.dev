@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Hardening Firefox against Injection Attacks - The Technical Details"
 date: 2020-07-07
 categories: 

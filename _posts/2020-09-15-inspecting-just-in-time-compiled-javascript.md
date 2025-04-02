@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Inspecting Just-in-Time Compiled JavaScript"
 date: 2020-09-15
 categories: 

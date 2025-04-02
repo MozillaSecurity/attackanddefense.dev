@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Firefox CodeQL Databases Available for Download"
 date: 2020-05-25
 categories: 

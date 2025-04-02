@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Guest Blog Post: Rollback Attack"
 date: 2020-10-12
 categories: 

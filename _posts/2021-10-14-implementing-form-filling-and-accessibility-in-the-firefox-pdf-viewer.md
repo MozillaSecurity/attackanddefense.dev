@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Implementing form filling and accessibility in the Firefox PDF viewer"
 date: 2021-10-14
 categories: 
@@ -202,7 +203,7 @@ For those not familiar with screen readers, having this extra structure also mak
 
 ## Ensure there are no regressions at scale, meet reftests
 
-![Reference Test Analyzer](images/reftest_analyzer.pn_-1536x775.png)
+![Reference Test Analyzer](/images/reftest_analyzer.pn_-1536x775.png)
 
 ### Crawling for PDFs
 

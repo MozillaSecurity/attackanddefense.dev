@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Adding CodeQL and clang to our Bug Bounty Program"
 date: 2019-11-14
 categories: 

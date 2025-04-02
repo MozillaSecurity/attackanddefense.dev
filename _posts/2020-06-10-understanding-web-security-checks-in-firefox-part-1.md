@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Understanding Web Security Checks in Firefox (Part 1)"
 date: 2020-06-10
 categories: 

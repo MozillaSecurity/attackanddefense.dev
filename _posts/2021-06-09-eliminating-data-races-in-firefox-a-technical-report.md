@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Eliminating Data Races in Firefox - A Technical Report"
 date: 2021-06-09
 categories: 

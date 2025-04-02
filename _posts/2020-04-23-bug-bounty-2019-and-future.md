@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Firefox’s Bug Bounty in 2019 and into the Future"
 date: 2020-04-23
 categories: 
@@ -9,7 +10,7 @@ Welcome to Mozilla’s new Attack & Defense blog. We’re going to use this blog
 
 Firefox has one of the oldest security bug bounties on the internet, dating back to 2004.  From 2017-2019, we paid out $965,750 to researchers across 348 bugs, making the average payout $2,775 - but as you can see in the graph below, our most common payout was actually $4,000!
 
-[![](images/Frequency-of-Bounty-Payment-Amounts-2017-2019.png)](http://blog.mozilla.org/attack-and-defense/files/2020/03/Frequency-of-Bounty-Payment-Amounts-2017-2019.png)
+[![](/images/Frequency-of-Bounty-Payment-Amounts-2017-2019.png)](http://blog.mozilla.org/attack-and-defense/files/2020/03/Frequency-of-Bounty-Payment-Amounts-2017-2019.png)
 
 After [adding a new static analysis bounty](https://blog.mozilla.org/attack-and-defense/2019/11/14/adding-codeql-and-clang-to-our-bug-bounty-program/) late last year, we're excited to further expand our bounty program in the coming year, as well as provide an on-ramp for more participants. We're updating our bug bounty policy and payouts to make it more appealing to researchers and reflect the more hardened security stance we adopted after moving to a multi-process, sandboxed architecture. Additionally, we'll be publishing more posts about how to get started testing Firefox - which is something we began by [talking about the HTML Sanitization we rely on to prevent UXSS](https://blog.mozilla.org/security/2019/12/02/help-test-firefoxs-built-in-html-sanitizer-to-protect-against-uxss-bugs/) . By following the instructions there you can immediately start trying to bypass our sanitizer using your existing Firefox installation in less than a minute.
 

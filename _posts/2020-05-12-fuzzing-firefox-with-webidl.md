@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Fuzzing Firefox with WebIDL"
 date: 2020-05-12
 categories: 

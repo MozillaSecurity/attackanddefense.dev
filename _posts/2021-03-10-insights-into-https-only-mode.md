@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Insights into HTTPS-Only Mode"
 date: 2021-03-10
 categories: 

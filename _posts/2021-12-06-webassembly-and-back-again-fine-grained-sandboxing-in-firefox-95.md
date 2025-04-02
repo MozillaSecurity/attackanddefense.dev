@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "WebAssembly and Back Again: Fine-Grained Sandboxing in Firefox 95"
 date: 2021-12-06
 categories: 

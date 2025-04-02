@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "IPC Fuzzing with Snapshots"
 date: 2024-06-24
 categories: 

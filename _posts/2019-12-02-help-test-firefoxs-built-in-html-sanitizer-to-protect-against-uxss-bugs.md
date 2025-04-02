@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Help Test Firefox’s built-in HTML Sanitizer to protect against UXSS bugs"
 date: 2019-12-02
 categories: 
