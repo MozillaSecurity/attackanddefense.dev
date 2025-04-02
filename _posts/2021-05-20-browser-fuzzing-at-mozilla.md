@@ -94,7 +94,9 @@ As in other fields, measurement is a key part of evaluating success. We leverage
 
 For example, the [meta bug for Domino](https://bugzilla.mozilla.org/show_bug.cgi?id=domino) lists all the issues (over 1100!) identified by this tool. Using this Bugzilla data, we are able to show the impact over the years of our various fuzzers.
 
-\[caption id="attachment\_47027" align="aligncenter" width="590"\]![Bar graph showing number of bugs reported by Domino over time](/images/Fuzzing-by-tools-Screenshot-221.svg) Number of bugs reported by Domino over time\[/caption\]
+![Bar graph showing number of bugs reported by Domino over time](/images/Fuzzing-by-tools-Screenshot-221.svg) 
+
+Number of bugs reported by Domino over time
 
 These dashboards help evaluate the return on investment of a fuzzer.
 
