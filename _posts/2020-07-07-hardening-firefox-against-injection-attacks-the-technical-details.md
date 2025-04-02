@@ -21,7 +21,7 @@ The security architecture for separating web content and privileged (chrome) con
 
  
 
-\[caption id="attachment\_150" align="aligncenter" width="450"\]![](images/chrome_vs_content-300x214.jpg) **Firefox Security Architecture** showing the separation of privileged chrome code and the Tabs A, B, and C including DOM windows exhibiting unprivileged content code.\[/caption\]
+\[caption id="attachment\_150" align="aligncenter" width="450"\]![](/images/chrome_vs_content-300x214.jpg) **Firefox Security Architecture** showing the separation of privileged chrome code and the Tabs A, B, and C including DOM windows exhibiting unprivileged content code.\[/caption\]
 
 The two privilege distinctions - a privileged parent process and other lesser privileged child processes; and the privileged System Principal Context and the lesser privileged Content and Null Principal Contexts - both describe mechanisms of privilege distinction within Firefox. However, the actual mechanism by which privilege is separated is generally unimportant in the context of privilege escalation attacks, which our hardening prevents.
 

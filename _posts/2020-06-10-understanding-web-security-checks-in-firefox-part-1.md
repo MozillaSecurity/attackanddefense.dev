@@ -46,7 +46,7 @@ The aforementioned System-Principal subsumes all other principals, but a Null-Pr
 
 Let’s assume you visit the web page https://example.com and that page then loads library.js from https://foo.com. For the JavaScript load to occur Firefox will internally create an nsIChannel with the URL of https://foo.com/library.js.
 
-![](images/sec_by_default-600x426.jpg)
+![](/images/sec_by_default-600x426.jpg)
 
 As illustrated, the loadinfo for that load would include the following information: A triggeringPrincipal of https://example.com, because the page https://example.com actually triggered the load to occur. The loadingPrincipal would also be set to https://example.com because the result of the JS load will be used in the security context of https://example.com. The ContentPolicy type will be set to TYPE\_SCRIPT which e.g., allows mapping of content type to Content Security Policy directives (in this particular case to the script-src directive). Finally, the security flags would be set to ALLOW\_CROSS\_ORIGIN because JavaScript files are allowed to be loaded cross origin.
 

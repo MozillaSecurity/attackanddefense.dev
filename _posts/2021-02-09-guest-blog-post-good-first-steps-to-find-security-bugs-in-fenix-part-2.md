@@ -27,11 +27,11 @@ Although these two HTML tags look similar in that they both fetch and render PNG
 
 Like other browsers, GeckoView has a separated context for normal mode and private browsing mode. So the cookies and local storage areas in private browsing mode are completely separated from the normal mode, and these values are not shared. On the other hand, the URL fetch class that Mozac has - written in Kotlin - has only a single cookie store. If a favicon request responded with a Set-Cookie header; it would be stored in that cookie store and a later fetch of the favicon in private browsing mode would respond with the same cookie and vice versa. ([Bug 1657251](https://bugzilla.mozilla.org/show_bug.cgi?id=1657251)).
 
-![](images/pasted-image-0.png)
+![](/images/pasted-image-0.png)
 
 This same type of bug appears not only in Favicon, but also in other features that have a similar mechanism. One example is the Web Notification API. Web Notifications is a feature that shows an OS-level notification through JavaScript. Similar to favicons, an icon image can appear in the notification dialog - and it had a bug that shared private browsing mode cookies with the normal mode in the exact same way ([Bug 1658231](https://bugzilla.mozilla.org/show_bug.cgi?id=1658231)).
 
-![](images/pasted-image-0-1.png)
+![](/images/pasted-image-0-1.png)
 
 These bugs do not only occur when loading icon images. [Bug 1663261](https://bugzilla.mozilla.org/show_bug.cgi?id=1663261) points out that a similar bypass occurs when downloading linked files via _<a download>_. File downloads are also handled by Mozac's Downloads feature, which satisfies the same conditions to cause a similar flaw.
 
@@ -45,6 +45,6 @@ Using the difference in User-Agent to distinguish the initiator of the request w
 
 For monitoring HTTP requests, the [Remote Debugging](https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging) is useful. Requests sent from MozacFetch will be output to the Network tab of the Multiprocess Toolbox process in Remote Debug window.You can find requests from Mozac by filtering by the string “MozacFetch”.
 
-![](images/pasted-image-0-2.png)
+![](/images/pasted-image-0-2.png)
 
 Have a good bug hunt!

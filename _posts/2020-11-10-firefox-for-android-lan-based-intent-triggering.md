@@ -61,7 +61,7 @@ Something I found very interesting is that while Intents are often built in code
 
 In fact, if you click on that link while reading this on an Android phone, it should pop open your default SMS application with the phone number and message filled in. You just triggered an Intent.
 
-![Preview of draft SMS](images/intent-preview.png)
+![Preview of draft SMS](/images/intent-preview.png)
 
 It was at this point that I had my "_Hmmm, I wonder what would happen if I..._" moment. I don't know how it is for everyone else, but that phrase pretty much sums up hacking for me.
 
@@ -140,7 +140,7 @@ Guess what happened? The dialer on the Android device magically popped open, all
 
  
 
-![SSDP Flow](images/ssdp-flow.png)
+![SSDP Flow](/images/ssdp-flow.png)
 
  
 

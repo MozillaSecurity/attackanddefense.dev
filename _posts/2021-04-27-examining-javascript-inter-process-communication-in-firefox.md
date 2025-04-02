@@ -19,7 +19,7 @@ As of April 2021, Firefox uses one privileged process to launch other process ty
 
 Firefox is shifting towards a new security architecture to achieve Site Isolation, which moves from a “process per tab” to a “process per [site](https://html.spec.whatwg.org/multipage/origin.html#sites)” architecture.
 
-\[caption id="attachment\_228" align="aligncenter" width="1123"\]![Left: Firefox using roughly a process per tab - Right: Fission-enabled Firefox, which uses a process per site (i.e., a seperate one for each banner ad and social button).](images/new-fission.png) Left: Current Firefox generally grouping a tab in its own process. Right: Fission-enabled Firefox, separating each site in its own process\[/caption\]
+\[caption id="attachment\_228" align="aligncenter" width="1123"\]![Left: Firefox using roughly a process per tab - Right: Fission-enabled Firefox, which uses a process per site (i.e., a seperate one for each banner ad and social button).](/images/new-fission.png) Left: Current Firefox generally grouping a tab in its own process. Right: Fission-enabled Firefox, separating each site in its own process\[/caption\]
 
 The parent process acts as a broker and trusted user interface host. Some features, like our settings page at about:preferences are essentially web pages (using HTML and JavaScript) that are hosted in the parent process. Additionally, various control features like modal dialogs, form auto-fill or native user interface pieces (e.g., the `<select>` element) are also implemented in the parent process. This level of privilege separation also requires receiving messages from content processes.
 
@@ -31,13 +31,13 @@ Using a [JSActor](https://firefox-source-docs.mozilla.org/dom/ipc/jsactors.html
 
 Since all JSActors are lazy-loaded we suggest to exercise the implemented functionality at least once, to ensure they are all present and allow for a smooth test and debug experience.
 
-\[caption id="attachment\_229" align="aligncenter" width="555"\]![Inter-Process Communication building on top of JSActors and implemented as FooParent and FooChild](images/jsactors.png) Inter-Process Communication building on top of JSActors and implemented as FooParent and FooChild\[/caption\]
+\[caption id="attachment\_229" align="aligncenter" width="555"\]![Inter-Process Communication building on top of JSActors and implemented as FooParent and FooChild](/images/jsactors.png) Inter-Process Communication building on top of JSActors and implemented as FooParent and FooChild\[/caption\]
 
 The example diagram above shows a pair of JSActors called _FooParent_ and _FooChild_. Messages sent by invoking _FooChild_ will only be received by a _FooParent_. The child instance can send a _one-off_ message with `sendAsyncMesage("someMessage", value)`. If it needs a response (wrapped in a `Promise`), it can send a query with `sendQuery("someMessage", value)`.
 
 The parent instance must implement a `receiveMessage(msg)` function to handle all incoming messages. Note that the messages are namespace-tied between a specific actor, so a _FooChild_ could send a message called _Bar:DoThing_ but will never be able to reach a _BarParent_. Here is some example code ([permalink, revision from March 25th](https://searchfox.org/mozilla-central/diff/3075dbd453f011aaf378bcac6b2700dccfcf814c/browser/actors/PromptParent.jsm)) which illustrates how a message is handled in the parent process.
 
-\[caption id="attachment\_221" align="aligncenter" width="506"\]![Code sample for a receiveMessage function in a JSActor](images/promptparent-excerpt.png) Code sample for a `receiveMessage` function in a JSActor\[/caption\]
+\[caption id="attachment\_221" align="aligncenter" width="506"\]![Code sample for a receiveMessage function in a JSActor](/images/promptparent-excerpt.png) Code sample for a `receiveMessage` function in a JSActor\[/caption\]
 
 As illustrated, the _PromptParent_ has a `receiveMessage` handler (line 127) and is passing the message data to additional functions that will decide where and how to open a prompt from the parent process. Message handlers like this and its callees are a source of untrusted data flowing into the parent process and provide logical entry points for in-depth audits
 
@@ -49,11 +49,11 @@ Under this system, JS in both processes would register message listeners using t
 
 Unlike JSActors, Message Managers need verbose initialization with addMessageListener and are not tied together. This means that messages are available for all classes that listen on the same message name and can be spread out through the code base.
 
-\[caption id="attachment\_230" align="aligncenter" width="555"\]![Inter-Process Communication using MessageManager](images/image6.png) Inter-Process Communication using MessageManager\[/caption\]
+\[caption id="attachment\_230" align="aligncenter" width="555"\]![Inter-Process Communication using MessageManager](/images/image6.png) Inter-Process Communication using MessageManager\[/caption\]
 
 As of late April 2021, our AddonsManager - the code that handles the installation of WebExtensions into Firefox - is using MessageManager APIs:
 
-\[caption id="attachment\_222" align="aligncenter" width="511"\]![Code sample for a receiveMessage function using the MessageManger API](images/addonsmanager-receivemessage-code-sample.png) Code sample for a `receiveMessage` function using the MessageManger API\[/caption\]
+\[caption id="attachment\_222" align="aligncenter" width="511"\]![Code sample for a receiveMessage function using the MessageManger API](/images/addonsmanager-receivemessage-code-sample.png) Code sample for a `receiveMessage` function using the MessageManger API\[/caption\]
 
 The code ([permalink to exact revision](https://searchfox.org/mozilla-central/rev/6309f663e7396e957138704f7ae7254c92f52f43/toolkit/mozapps/extensions/addonManager.js#216)) for setting a MessageManager looks very similar to the setup of a JSActor with the difference that messaging can be used synchronously, as indicated by the [sendSyncMessage call in the child process](https://searchfox.org/mozilla-central/rev/6309f663e7396e957138704f7ae7254c92f52f43/toolkit/mozapps/extensions/amInstallTrigger.jsm#64). Except for the lack of lazy-loading, you can assume the same security considerations: Just like with JSActors above, the `receiveMessage` function is where the untrusted information flows from the child into the parent process and should therefore be the focus of additional scrutiny.
 
@@ -72,7 +72,7 @@ Open the Developer Tools, click the "**···**" button in the top-right and fin
 - _Enable browser chrome and add-on debugging toolboxes_
 - _Enable remote debugging_
 
-\[caption id="attachment\_231" align="aligncenter" width="1662"\]![Enabling Browser debugging in Firefox Developer Tools](images/image4.png) Enabling Browser debugging in Firefox Developer Tools\[/caption\]
+\[caption id="attachment\_231" align="aligncenter" width="1662"\]![Enabling Browser debugging in Firefox Developer Tools](/images/image4.png) Enabling Browser debugging in Firefox Developer Tools\[/caption\]
 
 Restart Firefox Nightly and open the Browser debugger (Tools -> Browser Tools -> Browser Toolbox). This will open a new window that looks very similar to the common DevTools.
 
@@ -80,7 +80,7 @@ This is your debugger for the parent process (i.e., Browser Toolbox = Parent Too
 
 The frame selector button, which is left of the three balls "**···**" will allow you to select between windows. Select browser.xhtml, which is the main browser window. Switching to the Debug pane will let you search files and find the Parent actor you want to debug, as long as they have been already loaded. To ensure the _PromptParent_ actor has been properly initialized, open a new tab on e.g. [https://example.com](https://example.com) and make it call `alert(1)` from the normal DevTools console.
 
-\[caption id="attachment\_223" align="aligncenter" width="1847"\]![Hitting a breakpoint in Firefox’s parent process using Firefox Developer Tools (left)](images/alert-as-triggered-from-website-in-parent-devtools.png) Hitting a breakpoint in Firefox’s parent process using Firefox Developer Tools (left)\[/caption\]
+\[caption id="attachment\_223" align="aligncenter" width="1847"\]![Hitting a breakpoint in Firefox’s parent process using Firefox Developer Tools (left)](/images/alert-as-triggered-from-website-in-parent-devtools.png) Hitting a breakpoint in Firefox’s parent process using Firefox Developer Tools (left)\[/caption\]
 
 You should now be able to find PromptParent.jsm (Ctrl+P) and set a debugger breakpoint for all future invocations (see screenshot above). This will allow you to inspect and copy the typical arguments passed to the Prompt JSActor in the parent.
 
@@ -98,7 +98,7 @@ Now that we have the actor, we can use the data gathered in the parent process a
 
 `actor.sendQuery("Prompt:Open", {promptType: "alert", title: "👻", modalType: 1, promptPrincipal: null, inPermutUnload: false, _remoteID: "id-lol"});`
 
-\[caption id="attachment\_225" align="aligncenter" width="1848"\]![Invoking JavaScript IPC from Firefox Developer Tools (bottom right) and observing the effects (top right)](images/Bildschirmfoto-vom-2021-03-26-15-45-18.png) Invoking JavaScript IPC from Firefox Developer Tools (bottom right) and observing the effects (top right)\[/caption\]
+\[caption id="attachment\_225" align="aligncenter" width="1848"\]![Invoking JavaScript IPC from Firefox Developer Tools (bottom right) and observing the effects (top right)](/images/Bildschirmfoto-vom-2021-03-26-15-45-18.png) Invoking JavaScript IPC from Firefox Developer Tools (bottom right) and observing the effects (top right)\[/caption\]
 
 In this case, we got away with not sending a reasonable value for `promptPrincipal` at all. This is certainly not going to be true for all message handlers. For the sake of this blog post, we can just assume that a _Principal_ is the implementation of an [Origin](https://html.spec.whatwg.org/multipage/origin.html#concept-origin) (and for background reading, we recommend an explanation of the _Principal_ Objects in our two-series blog post "Understanding Web Security Checks in Firefox": See [part 1](https://blog.mozilla.org/attack-and-defense/2020/06/10/understanding-web-security-checks-in-firefox-part-1/) and [part 2](https://blog.mozilla.org/attack-and-defense/2020/08/05/understanding-web-security-checks-in-firefox-part-2/)).
 
@@ -122,7 +122,7 @@ The issue in itself was a typical logic bug: Instead of switching which prompt t
 
 Let's take a look at  the diff for the security fix to see how we replaced the vulnerable logic and handled the prompt type switching in the parent process ([permalink to source](https://searchfox.org/mozilla-central/diff/3075dbd453f011aaf378bcac6b2700dccfcf814c/browser/actors/PromptParent.jsm#141)).
 
-\[caption id="attachment\_226" align="aligncenter" width="629"\]![Handling of untrusted message.data before and after fixing CVE-2019-11708.](images/diff-prompt-coinbase-0day.png) Handling of untrusted `message.data` before and after fixing CVE-2019-11708.\[/caption\]
+\[caption id="attachment\_226" align="aligncenter" width="629"\]![Handling of untrusted message.data before and after fixing CVE-2019-11708.](/images/diff-prompt-coinbase-0day.png) Handling of untrusted `message.data` before and after fixing CVE-2019-11708.\[/caption\]
 
 You will notice that line 140+ used to accept and use a parameter named `uri`. This was fixed in a multitude of patches. In addition to only allowing certain dialogs to open in the parent process we also generally [disallow opening web-URLs in the parent process](https://blog.mozilla.org/attack-and-defense/2020/07/07/hardening-firefox-against-injection-attacks-the-technical-details/).
 

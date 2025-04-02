@@ -74,7 +74,7 @@ Listing 3: The request is loaded into a new Security Context (using a NullPrinci
 
 But here is what it looked like in the vulnerable Firefox version 69:
 
-| ![Screenshot of the page opened in a vulnerable version of Firefox 69.](images/csp-bypass-example.png) |
+| ![Screenshot of the page opened in a vulnerable version of Firefox 69.](/images/csp-bypass-example.png) |
 | --- |
 
 Listing 4: Screenshot of the page opened in a vulnerable version of Firefox 69. Photo by [Mikael Seegen](https://unsplash.com/@mikael_seegen).

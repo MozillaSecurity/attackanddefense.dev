@@ -15,7 +15,7 @@ tags:
 
 Without a tool like ThreadSanitizer, even the most experienced developers can spend hours on locating such a bug. With ThreadSanitizer, you get a comprehensive data race report that often contains all of the information needed to fix the problem.
 
-![An example for a ThreadSanitizer report, showing where each thread is reading/writing, the location they both access and where the threads were created.](images/tsan-sample-race.png) ThreadSanitizer Output for [this example program](https://gist.github.com/choller/d625ecb4f245a4f466758b00dc254291) (shortened for article)
+![An example for a ThreadSanitizer report, showing where each thread is reading/writing, the location they both access and where the threads were created.](/images/tsan-sample-race.png) ThreadSanitizer Output for [this example program](https://gist.github.com/choller/d625ecb4f245a4f466758b00dc254291) (shortened for article)
 
 One important property of TSan is that, when properly deployed, the data race detection does not produce false positives. This is incredibly important for tool adoption, as developers quickly lose faith in tools that produce uncertain results.
 

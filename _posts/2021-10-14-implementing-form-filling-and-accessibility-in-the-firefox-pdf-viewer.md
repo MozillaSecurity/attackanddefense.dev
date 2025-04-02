@@ -13,7 +13,7 @@ While we invested more time in the PDF viewer, we also went through the backlog 
 
 ## Brief Summary of the PDF.js Architecture
 
- [![Overview of the PDF.js Architecture](images/pdfjs_architecture-1536x752.png)](https://hacks.mozilla.org/wp-content/uploads/2021/09/pdfjs_architecture-1536x752.png) To understand how we added support for forms and tagged PDFs, it’s first important to understand some basics about how the PDF viewer (PDF.js) works in Firefox.
+ [![Overview of the PDF.js Architecture](/images/pdfjs_architecture-1536x752.png)](https://hacks.mozilla.org/wp-content/uploads/2021/09/pdfjs_architecture-1536x752.png) To understand how we added support for forms and tagged PDFs, it’s first important to understand some basics about how the PDF viewer (PDF.js) works in Firefox.
 
 First, PDF.js will fetch and parse the document in a web worker. The parsed document will then generate drawing instructions. PDF.js sends them to the main thread and draws them on an HTML5 canvas element.
 
@@ -37,7 +37,7 @@ By inspecting (with the help of the [qpdf](https://github.com/qpdf/qpdf) tool) t
 
 To generate the field appearance, we needed to get the values entered by the user. We introduced an object called annotationStorage to store those values by using callback functions in the corresponding HTML elements. The annotationStorage is then passed to the worker when saving or printing, and the values for each annotation are used to create an appearance.
 
-![Example PDF.js Form Rendering](images/1040.png)
+![Example PDF.js Form Rendering](/images/1040.png)
 
 On top a filled form in Firefox and on bottom the printed PDF opened in Evince.
 
@@ -112,7 +112,7 @@ The XFA entry in a PDF contains multiple [XML](https://en.wikipedia.org/wiki/XML
 
 #### Output From Template
 
-![Rendering of XFA Document](images/xfa_rendering.png)
+![Rendering of XFA Document](/images/xfa_rendering.png)
 
 ### The XFA implementation
 
@@ -136,7 +136,7 @@ Not embedding fonts in a PDF is considered bad practice, but in reality many PDF
 
 To have our output more closely match Adobe Acrobat, we decided to ship the [Liberation](https://en.wikipedia.org/wiki/Liberation_fonts) fonts and glyph widths of well-known fonts. We used the widths to rescale the glyph drawing to have compatible font substitutions for all the well-known fonts.
 
-[![Comparing glyph rescaling](images/glyph_rescale-1536x659.png)](https://hacks.mozilla.org/wp-content/uploads/2021/10/glyph_rescale.png)
+[![Comparing glyph rescaling](/images/glyph_rescale-1536x659.png)](https://hacks.mozilla.org/wp-content/uploads/2021/10/glyph_rescale.png)
 
 On the left: default font without glyph rescaling. On the right: Liberation font with glyph rescaling to emulate MyriadPro.
 

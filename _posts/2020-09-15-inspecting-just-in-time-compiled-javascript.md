@@ -24,7 +24,7 @@ print(disnative(add))
 
 ```
 
-![](images/Screen-Shot-2020-09-09-at-4.04.29-PM.png)
+![](/images/Screen-Shot-2020-09-09-at-4.04.29-PM.png)
 
 You’ll be greeted by an initial line indicating which backend is being used. The possible values and their meanings are:
 

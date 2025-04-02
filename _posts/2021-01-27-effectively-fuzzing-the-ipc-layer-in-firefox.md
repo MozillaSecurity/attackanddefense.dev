@@ -26,7 +26,7 @@ From a security perspective the Inter-Process Communication (IPC) is of particul
 
  
 
-![](images/ipc_fuzzing-600x299.jpeg)
+![](/images/ipc_fuzzing-600x299.jpeg)
 
  
 

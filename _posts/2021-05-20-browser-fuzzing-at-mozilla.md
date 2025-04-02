@@ -13,7 +13,7 @@ tags:
 
 Mozilla has been [fuzzing Firefox](https://firefox-source-docs.mozilla.org/tools/fuzzing/index.html) and its underlying components for a while. It has proven to be one of the most efficient ways to identify quality and security issues. In general, we apply fuzzing on [different levels](https://firefox-source-docs.mozilla.org/tools/fuzzing/index.html#levels-of-fuzzing-in-firefox-gecko): there is fuzzing the browser as a whole, but a significant amount of time is also spent on [fuzzing isolated code](https://firefox-source-docs.mozilla.org/tools/fuzzing/fuzzing_interface.html) (e.g. with [libFuzzer](https://www.llvm.org/docs/LibFuzzer.html)) or whole components such as the [JS engine](https://firefox-source-docs.mozilla.org/js/build.html) using separate shells. In this blog post, we will talk specifically about _browser_ fuzzing only, and go into detail on the pipeline we’ve developed. This single pipeline is the result of years of work that the fuzzing team has put into aggregating our browser fuzzing efforts to provide consistently actionable issues to developers and to ease integration of internal and external fuzzing tools as they become available.
 
-![Diagram showing interaction of systems used in Mozilla's browser fuzzing workflow](images/Fuzzing-pipeline1.svg)
+![Diagram showing interaction of systems used in Mozilla's browser fuzzing workflow](/images/Fuzzing-pipeline1.svg)
 
 ## Build instrumentation
 
@@ -35,7 +35,7 @@ As the goal of this blog post is to explain the whole pipeline, we won’t spend
 
 For fuzzers that target the browser, [Grizzly](https://github.com/MozillaSecurity/grizzly) manages and runs test cases and monitors for results. [Creating an adapter](https://github.com/MozillaSecurity/grizzly/wiki/Writing-an-Adapter) allows us to easily run existing fuzzers in Grizzly.
 
-![Simplified Python code for a Grizzly adaptor using an external fuzzer.](images/example2.svg)
+![Simplified Python code for a Grizzly adaptor using an external fuzzer.](/images/example2.svg)
 
 To make full use of available resources on any given machine, we run multiple instances of Grizzly in parallel.
 
@@ -53,7 +53,7 @@ The [FuzzManager](https://github.com/MozillaSecurity/FuzzManager) client library
 
 Fuzzers commonly generate test cases that are hundreds or even thousands of lines long. FuzzManager buckets are automatically scanned to queue reduction tasks in Taskcluster. These reduction tasks use [Grizzly Reduce](https://github.com/MozillaSecurity/grizzly/wiki/grizzly-reduce) and [Lithium](https://github.com/MozillaSecurity/lithium) to apply different reduction strategies, often removing the majority of the unnecessary data. Each bucket is continually processed until a successful reduction is complete. Then an engineer can do a final inspection of the minimized test case and attach it to a bug report. The final result is often used as a crash test in the Firefox test suite.
 
-![Animation showing an example testcase reduction using Grizzly](images/reduce-3.svg)
+![Animation showing an example testcase reduction using Grizzly](/images/reduce-3.svg)
 
 Code coverage of the fuzzer is also measured periodically. FuzzManager is used again to collect code coverage data and generate coverage reports.
 
@@ -92,7 +92,7 @@ As in other fields, measurement is a key part of evaluating success. We leverage
 
 For example, the [meta bug for Domino](https://bugzilla.mozilla.org/show_bug.cgi?id=domino) lists all the issues (over 1100!) identified by this tool. Using this Bugzilla data, we are able to show the impact over the years of our various fuzzers.
 
-\[caption id="attachment\_47027" align="aligncenter" width="590"\]![Bar graph showing number of bugs reported by Domino over time](images/Fuzzing-by-tools-Screenshot-221.svg) Number of bugs reported by Domino over time\[/caption\]
+\[caption id="attachment\_47027" align="aligncenter" width="590"\]![Bar graph showing number of bugs reported by Domino over time](/images/Fuzzing-by-tools-Screenshot-221.svg) Number of bugs reported by Domino over time\[/caption\]
 
 These dashboards help evaluate the return on investment of a fuzzer.
 

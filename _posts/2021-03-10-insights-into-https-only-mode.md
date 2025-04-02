@@ -16,7 +16,7 @@ In a recent academic publication titled [HTTPS-Only: Upgrading all connections t
 
 The fundamental security problem of the current browser practice of defaulting to use insecure http, instead of secure https, when initially connecting to a website, is that attackers can intercept the initial request to a website. Hijacking the initial request suffices for an attacker to perform a man-in-the-middle attack, which in turn allows the attacker to downgrade the connection, eavesdrop or modify data sent between client and server.
 
-\[caption id="attachment\_207" align="aligncenter" width="600"\]![](images/principle_approach-600x281.jpg) **Left:** The current standard behavior of browsers defaulting to http with a server reachable over https; **Right:** HTTPS-Only behaviour defaulting to https with fallback to http when a server is not reachable over https.\[/caption\]
+\[caption id="attachment\_207" align="aligncenter" width="600"\]![](/images/principle_approach-600x281.jpg) **Left:** The current standard behavior of browsers defaulting to http with a server reachable over https; **Right:** HTTPS-Only behaviour defaulting to https with fallback to http when a server is not reachable over https.\[/caption\]
 
  
 
@@ -44,7 +44,7 @@ Ultimately, HTTPS-Only also needs full integration with two critical browser sec
 
 The HTTPS-Only approach specifically aims to ensure connections use the secure https protocol, where browsers traditionally would connect using the http protocol. To target this data set, we record information when HTTPS-Only Mode is able to upgrade a connection by rewriting the scheme of a URL from http to https and a load succeeds.
 
-\[caption id="attachment\_208" align="aligncenter" width="486"\]![](images/top-level-pie-chart-error-page-600x360.jpg) Attempts to upgrade top-level (document) legacy addresses from http to https via HTTPS-Only (data collected between Nov 17th and Dec. 17th 2020).\[/caption\]
+\[caption id="attachment\_208" align="aligncenter" width="486"\]![](/images/top-level-pie-chart-error-page-600x360.jpg) Attempts to upgrade top-level (document) legacy addresses from http to https via HTTPS-Only (data collected between Nov 17th and Dec. 17th 2020).\[/caption\]
 
  
 
@@ -52,7 +52,7 @@ As illustrated in the Figure above, the HTTPS-Only mechanism successfully upgrad
 
 Our observation that HTTPS-Only can successfully upgrade seven out of ten of top-level loads from http to https reflects a general migration of websites supporting https. At the same time, this fraction of successful upgrades of legacy addresses also confirms that web pages still contain a multitude of http-based URLs where browsers would traditionally establish an insecure connection.
 
-\[caption id="attachment\_209" align="aligncenter" width="600"\]![](images/top-level-overview-pie-600x316.jpg) Use of https for top-level (document) loads when HTTPS-Only is enabled (data collected between Nov 17th and Dec. 17th 2020).\[/caption\]
+\[caption id="attachment\_209" align="aligncenter" width="600"\]![](/images/top-level-overview-pie-600x316.jpg) Use of https for top-level (document) loads when HTTPS-Only is enabled (data collected between Nov 17th and Dec. 17th 2020).\[/caption\]
 
  
 
