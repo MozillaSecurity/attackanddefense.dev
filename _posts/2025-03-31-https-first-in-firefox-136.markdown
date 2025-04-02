@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Evolution of HTTPS Adoption in Firefox"
-date:   2024-03-31 17:37:37 +0100
+date:   2025-03-31 17:37:37 +0100
 author: Frederik Braun, Simon Friedberger, Malte Jürgens, Christoph Kerschbaumer
 ---
 
