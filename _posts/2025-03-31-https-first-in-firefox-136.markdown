@@ -2,6 +2,7 @@
 layout: post
 title:  "The Evolution of HTTPS Adoption in Firefox"
 date:   2024-03-31 17:37:37 +0100
+author: Frederik Braun, Simon Friedberger, Malte Jürgens, Christoph Kerschbaumer
 ---
 
 We at Mozilla believe that people deserve privacy and one of the most important pieces of web privacy is provided through [ubiquitous encryption](https://www.mozilla.org/en-US/about/webvision/full/#ubiquitousencryption). Because of this, we shipped HTTPS-First by default as of Firefox 136 (March 4th). The mechanism [upgrades all page loads to HTTPS](https://support.mozilla.org/en-US/kb/https-first) and also includes an automated fallback to HTTP if the page does not support HTTPS or does not load fast enough. While this opportunistic upgrading mechanism does not protect against active network attackers, it still favours HTTPS and prevents known [pervasive internet monitoring attacks](https://datatracker.ietf.org/doc/rfc7258/).
