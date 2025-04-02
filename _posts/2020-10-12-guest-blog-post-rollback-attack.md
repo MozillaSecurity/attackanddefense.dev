@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Guest Blog Post: Rollback Attack"
+author: Xiaoyin Liu
 date: 2020-10-12
 categories: 
   - "bug-bounty"

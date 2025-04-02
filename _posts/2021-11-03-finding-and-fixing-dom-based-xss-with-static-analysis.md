@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Frederik Braun
 title: "Finding and Fixing DOM-based XSS with Static Analysis"
 date: 2021-11-03
 categories: 

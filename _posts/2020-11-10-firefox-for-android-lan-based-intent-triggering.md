@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Guest Blog Post: Firefox for Android LAN-Based Intent Triggering"
+author: Chris Moberly, Frederik Braun
 date: 2020-11-10
 categories: 
   - "bug-bounty"

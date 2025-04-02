@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Firefox CodeQL Databases Available for Download"
+author: Tom Ritter
 date: 2020-05-25
 categories: 
   - "bug-bounty"

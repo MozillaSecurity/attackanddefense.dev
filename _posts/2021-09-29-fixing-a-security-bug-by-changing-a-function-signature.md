@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Fixing a Security Bug by Changing a Function Signature"
+author: Molly Howell
 date: 2021-09-29
 categories: 
   - "bug-bounty"

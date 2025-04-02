@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Effectively Fuzzing the IPC Layer in Firefox"
+author: Christoph Kerschbaumer, Christian Holler
 date: 2021-01-27
 categories: 
   - "firefox-internals"

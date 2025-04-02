@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Inspecting Just-in-Time Compiled JavaScript"
+author: Tom Ritter, Jan de Mooij, Lars Hansen
 date: 2020-09-15
 categories: 
   - "firefox-internals"

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Insights into HTTPS-Only Mode"
+author: Christoph Kerschbaumer, Julian Gaibler, Arthur Edelstein, Thyla van der Merwe
 date: 2021-03-10
 categories: 
   - "firefox-internals"

@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Brendan Dahl, Calixte Denizet, Marco Castelluccio
 title: "Implementing form filling and accessibility in the Firefox PDF viewer"
 date: 2021-10-14
 categories: 

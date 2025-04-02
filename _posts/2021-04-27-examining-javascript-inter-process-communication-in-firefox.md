@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Examining JavaScript Inter-Process Communication in Firefox"
+author: Frederik Braun
 date: 2021-04-27
 categories: 
   - "bug-bounty"

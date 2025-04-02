@@ -2,7 +2,8 @@
 layout: post
 title: "Remote Code Execution in Firefox beyond memory corruptions"
 date: 2019-09-29
-categories: 
+author: Frederik Braun
+categories:
   - "hack-and-tell"
 ---
 

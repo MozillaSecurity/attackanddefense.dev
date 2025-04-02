@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Firefox’s Bug Bounty in 2019 and into the Future"
+author: Tom Ritter
 date: 2020-04-23
 categories: 
   - "bug-bounty"

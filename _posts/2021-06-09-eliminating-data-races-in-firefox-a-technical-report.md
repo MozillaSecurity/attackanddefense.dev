@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Eliminating Data Races in Firefox - A Technical Report"
+author: Christian Holler, Aria Beingessner, Kris Wright
 date: 2021-06-09
 categories: 
   - "hardening"

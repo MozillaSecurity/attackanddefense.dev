@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Guest Blog Post: Leaking silhouettes of cross-origin images"
+author: Aleksejs Popovs
 date: 2021-01-11
 categories: 
   - "bug-bounty"

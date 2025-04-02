@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "IPC Fuzzing with Snapshots"
+author: "Christian Holler"
 date: 2024-06-24
-categories: 
+categories:
   - "firefox-internals"
   - "security-internals"
-tags: 
+tags:
   - "fuzzing"
   - "ipc"
   - "ipc-fuzzing"

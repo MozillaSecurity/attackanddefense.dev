@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Hardening Firefox against Injection Attacks - The Technical Details"
+author: Christoph Kerschbaumer, Tom Ritter, Frederik Braun
 date: 2020-07-07
 categories: 
   - "hardening"

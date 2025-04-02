@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Understanding Web Security Checks in Firefox (Part 1)"
+author: Christoph Kerschbaumer, Frederik Braun
 date: 2020-06-10
 categories: 
   - "security-internals"

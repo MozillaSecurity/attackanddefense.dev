@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Guest Blog Post: Good First Steps to Find Security Bugs in Fenix (Part 2)"
+author: Muneaki Nishimura
 date: 2021-02-09
-categories: 
+categories:
   - "bug-bounty"
   - "guest-post"
   - "hack-and-tell"

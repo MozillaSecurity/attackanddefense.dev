@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Adding CodeQL and clang to our Bug Bounty Program"
+author: Tom Ritter
 date: 2019-11-14
 categories: 
   - "bug-bounty"

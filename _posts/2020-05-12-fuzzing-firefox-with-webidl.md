@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Fuzzing Firefox with WebIDL"
+author: Jason Kratzer
 date: 2020-05-12
 categories: 
   - "hack-and-tell"

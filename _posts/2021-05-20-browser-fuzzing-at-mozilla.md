@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Browser fuzzing at Mozilla"
+author: Tyson Smith, Jesse Schwartzentruber, Sylvestre Ledru
 date: 2021-05-20
 tags: 
   - "automation"

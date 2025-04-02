@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Guest Blog Post: Good First Steps to Find Security Bugs in Fenix (Part 1)"
+author: Muneaki Nishimura
 date: 2020-12-08
 categories: 
   - "bug-bounty"

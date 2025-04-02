@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Help Test Firefox’s built-in HTML Sanitizer to protect against UXSS bugs"
+author: Frederik Braun
 date: 2019-12-02
 categories: 
   - "bug-bounty"
