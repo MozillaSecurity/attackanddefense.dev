@@ -21,9 +21,9 @@ The security architecture for separating web content and privileged (chrome) con
 1. The privileged chrome process is able to perform any action the end user has access to. In contrast, the lesser privileged content process (used for loading web content) is sandboxed and restricted from almost all access to Operating System features or user privileges.
 2. The security context of the User Interface and privileged chrome code within Firefox is represented by the System-Principal. In contrast, the security context of untrusted web content builds upon the security context represented by a Content-Principal. (Please find details on the different kinds of Principals within Firefox in our recent post: [Understanding Web Security Checks in Firefox](https://blog.mozilla.org/attack-and-defense/2020/06/10/understanding-web-security-checks-in-firefox-part-1/)).
 
- 
+![](/images/chrome_vs_content-300x214.jpg)
 
-\[caption id="attachment\_150" align="aligncenter" width="450"\]![](/images/chrome_vs_content-300x214.jpg) **Firefox Security Architecture** showing the separation of privileged chrome code and the Tabs A, B, and C including DOM windows exhibiting unprivileged content code.\[/caption\]
+**Firefox Security Architecture** showing the separation of privileged chrome code and the Tabs A, B, and C including DOM windows exhibiting unprivileged content code.
 
 The two privilege distinctions - a privileged parent process and other lesser privileged child processes; and the privileged System Principal Context and the lesser privileged Content and Null Principal Contexts - both describe mechanisms of privilege distinction within Firefox. However, the actual mechanism by which privilege is separated is generally unimportant in the context of privilege escalation attacks, which our hardening prevents.
 
