@@ -60,7 +60,7 @@ Note: Some of the bugs linked below might not be accessible to the general publi
 
 **Sanitizer API:** We have [updated our implementation of the Sanitizer API](https://bugzilla.mozilla.org/show_bug.cgi?id=1956310), which allows mitigating the risk of DOM-based cross-site scripting (XSS) attacks. This update aligns our implementation of the sanitizer API with recent developments and prepares it for a pre-release.
 
-**Integrity:** We presented our plans for wider Web App Integrity at the W3C WebAppSec working group ([explainer](https://github.com/beurdouche/explainers/blob/main/waict-explainer.md)) and started to work on [a first milestone towards script-integrity enforcements](https://github.com/w3c/webappsec-subresource-integrity/pull/133) as part of the Subresource Integrity specification with Yoav Weis from Shopify. We also [implemented integrity for import maps.](https://bugzilla.mozilla.org/show_bug.cgi?id=1945540)
+**Integrity:** We presented our plans for improved Web App Integrity at the W3C WebAppSec working group ([explainer](https://github.com/beurdouche/explainers/blob/main/waict-explainer.md)) and started to work on [a first milestone towards script-integrity enforcements](https://github.com/w3c/webappsec-subresource-integrity/pull/133) as part of the Subresource Integrity specification with Yoav Weis from Shopify. We also [implemented integrity for import maps.](https://bugzilla.mozilla.org/show_bug.cgi?id=1945540)
 
 ## Going Forward
 
