@@ -38,7 +38,7 @@ Note: Some of the bugs linked below might not be accessible to the general publi
 
 **CSS Fuzzing:** We are also attributing a major piece of our platform goals to [Interop 2025](https://wpt.fyi/interop-2025): Enhancements in CSS syntax generation have shown immediate results and will continue to support the work throughout the year.
 
-**XSLT Fuzzing**: Early in Q1, we have also received an experimental XSLT fuzzer from Ivan Fratric of Google Project Zero that is now running continuously in our lab. Thank you, Ivan\!
+**XSLT Fuzzing:** Early in Q1, we have incorporated an experimental XSLT fuzzer by Ivan Fratric of Google Project Zero into our infrastructure, where it is now running continuously. Thank you, Ivan\!
 
 **NSS Fuzzing:** Our fuzzing focus on NSS (Network Security Services) has also shown a significant uptick in NSS fuzzing coverage across both oss-fuzz as well as our internal tools. We also added a TSan target for NSS, ensuring stricter thread-safety going forward.
 
