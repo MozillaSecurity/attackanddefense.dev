@@ -54,7 +54,7 @@ Note: Some of the bugs linked below might not be accessible to the general publi
 
 ## Web Security & Standards
 
-**Fingerprinting:** We have taken on co-authorship of the [W3C’s guidance on Fingerprinting](https://w3c.github.io/fingerprinting-guidance/), to ensure that it matches our understanding of the evolving threads and the meaningful defenses we envision.  We’ve merged some changes already with more in discussion.
+**Fingerprinting:** We have taken on co-authorship of the [W3C’s guidance on Fingerprinting](https://w3c.github.io/fingerprinting-guidance/), to ensure that it matches our understanding of the evolving threats and the meaningful defenses we envision.  We’ve merged some changes already with more in discussion.
 
 **Messaging Layer Security**: Firefox is now the first browser to have a prototype implementation of MLS (Messaging Layer Security) ([Bug 1876002](https://bugzilla.mozilla.org/show_bug.cgi?id=1876002)). MLS enables end-to-end security for a wide range of use cases such as secure group messaging. MLS is available in Firefox 136 as an [origin trial](https://wiki.mozilla.org/Origin_Trials) (set the preference dom.origin-trials.mls.state to 1) which exposes an experimental Web API that will be used by our partners.
 
