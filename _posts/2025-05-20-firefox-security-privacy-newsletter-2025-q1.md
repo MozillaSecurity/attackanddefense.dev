@@ -1,6 +1,6 @@
 # Firefox Security and Privacy Newsletter 2025 Q1
 
-Security and Privacy on the web are the cornerstones of [Mozilla’s manifesto](https://www.mozilla.org/en-US/about/manifesto/), and they influence how we operate and build our products. Following are the highlights of our work from Q1 2025, grouped into the following categories:
+Security and privacy on the web are cornerstones of [Mozilla’s manifesto](https://www.mozilla.org/en-US/about/manifesto/), and they influence how we operate and build our products. Following are the highlights of our work from Q1 2025, grouped into the following categories:
 
 * **Firefox Product Security & Privacy**, showcasing new Security & Privacy Features and Integrations in Firefox.  
 * **Core Security**, outlining Security and Hardening efforts within the Firefox Platform.  
