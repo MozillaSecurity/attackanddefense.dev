@@ -54,17 +54,17 @@ Note: Some of the bugs linked below might not be accessible to the general publi
 
 ## Web Security & Standards
 
-**Fingerprinting:** We have taken on co-authorship of the [W3C’s guidance on Fingerprinting](https://w3c.github.io/fingerprinting-guidance/), to ensure that it matches our understanding of the evolving threats and the meaningful defenses we envision.  We’ve merged some changes already with more in discussion.
+**Fingerprinting:** We have taken on co-authorship of the [W3C’s guidance on Fingerprinting](https://w3c.github.io/fingerprinting-guidance/), to ensure that it matches our understanding of the evolving threats and the meaningful defenses we envision.  We have merged some changes already with more under discussion.
 
 **Messaging Layer Security**: Firefox is now the first browser to have a prototype implementation of MLS (Messaging Layer Security) ([Bug 1876002](https://bugzilla.mozilla.org/show_bug.cgi?id=1876002)). MLS enables end-to-end security for a wide range of use cases such as secure group messaging. MLS is available in Firefox 136 as an [origin trial](https://wiki.mozilla.org/Origin_Trials) (set the preference dom.origin-trials.mls.state to 1) which exposes an experimental Web API that will be used by our partners.
 
-**Sanitizer API:** We have [updated our implementation of the Sanitizer API](https://bugzilla.mozilla.org/show_bug.cgi?id=1956310), which allows to mitigate the risk of DOM-based cross-site scripting (XSS) attacks. This update aligns our implementation of the sanitizer API with recent developments and prepares it for a pre-release.
+**Sanitizer API:** We have [updated our implementation of the Sanitizer API](https://bugzilla.mozilla.org/show_bug.cgi?id=1956310), which allows mitigating the risk of DOM-based cross-site scripting (XSS) attacks. This update aligns our implementation of the sanitizer API with recent developments and prepares it for a pre-release.
 
 **Integrity:** We presented our plans for wider Web App Integrity at the W3C WebAppSec working group ([explainer](https://github.com/beurdouche/explainers/blob/main/waict-explainer.md)) and started to work on [a first milestone towards script-integrity enforcements](https://github.com/w3c/webappsec-subresource-integrity/pull/133) as part of the Subresource Integrity specification with Yoav Weis from Shopify. We also [implemented integrity for import maps.](https://bugzilla.mozilla.org/show_bug.cgi?id=1945540)
 
 ## Going Forward
 
-As a Firefox user, you will automatically benefit from all the mentioned security and privacy benefits with the enabled auto-updates in Firefox. If you aren’t a Firefox user yet, you can simply [download Firefox](https://www.mozilla.org/firefox/new/?_gl=1*3c2zyd*_ga*MTkzMzM4MjE2NC4xNjc0NzM5NDMy*_ga_X4N05QV93S*MTc0NTg0NzU4Ny4xODIuMS4xNzQ1ODQ3NjM5LjAuMC4w) and start benefiting from all the ways that Firefox works to protect you when browsing the internet.
+As a Firefox user, you will automatically benefit from all the mentioned security and privacy benefits with the enabled auto-updates in Firefox. If you are not a Firefox user yet, you can simply [download Firefox](https://www.mozilla.org/firefox/new/?_gl=1*3c2zyd*_ga*MTkzMzM4MjE2NC4xNjc0NzM5NDMy*_ga_X4N05QV93S*MTc0NTg0NzU4Ny4xODIuMS4xNzQ1ODQ3NjM5LjAuMC4w) and start benefiting from all the ways that Firefox works to protect you when browsing the internet.
 
 Thanks to everyone who helps make Firefox and the open web more secure and privacy-respecting.
 
