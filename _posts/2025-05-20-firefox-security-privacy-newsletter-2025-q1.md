@@ -42,7 +42,7 @@ Note: Some of the bugs linked below might not be accessible to the general publi
 
 **NSS Fuzzing:** Our fuzzing focus on NSS (Network Security Services) has also shown a significant uptick in NSS fuzzing coverage across both oss-fuzz as well as our internal tools. We also added a TSan target for NSS, ensuring stricter thread-safety going forward.
 
-**Site-scout**: Site-scout is a tool that visits web pages with instrumented builds (like Address Sanitizer). We are continuing to enhance site-scout, such that it interacts with websites and ideally tease out more bugs.
+**Site-scout**: Site-scout is a tool that visits web pages with instrumented builds (like Address Sanitizer). We are continuing to enhance site-scout, such that it interacts with websites and ideally teases out more bugs.
 
 ## Community Engagement
 
