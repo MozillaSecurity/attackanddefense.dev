@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Cross-Translation Unit Taint Analysis for Firefox"
+title:  "Attempting Cross Translation Unit Taint Analysis for Firefox"
 date:   2025-12-16 10:06:37 +0100
 author: Balázs Benics, Tom Ritter, Frederik Braun
 ---
