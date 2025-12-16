@@ -120,7 +120,7 @@ call `A::data()` and on the other one `B::data()`.
 ```c++
 // class A... class B deriving from Base
 void func(Base *p) {
-p->data(); // ‘p’ might point to an object A or B here.
+  p->data(); // ‘p’ might point to an object A or B here.
 }
 ```
 
